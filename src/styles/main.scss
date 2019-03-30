@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+$transparent-white: rgba(250,250,250,0.4);
+* {
+	font-family: 'Anonymous Pro', monospace;
+}
+
 @font-face {
     font-family: 'Special Elite';
-    src: url('http://www.typewritesomething.com/inc/specialelite-webfont.eot');
-    src: url('http://www.typewritesomething.com/inc/specialelite-webfont.eot?#iefix') format('embedded-opentype'),
-         url('http://www.typewritesomething.com/inc/specialelite-webfont.woff2') format('woff2'),
-         url('http://www.typewritesomething.com/inc/specialelite-webfont.woff') format('woff'),
-         url('http://www.typewritesomething.com/inc/specialelite-webfont.ttf') format('truetype'),
-         url('http://www.typewritesomething.com/inc/specialelite-webfont.svg#special_eliteregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -27,6 +28,17 @@ canvas {
 		right: 0;
 }
 
+
+#text-boxwrapper{
+	width:60vw;
+	height:80vh;
+}
+#text-box{
+	width:60vw;
+	height:80vh;
+	font-family: 'Special Elite';
+	font-size: 3em;
+}
 #cursor-input {
 		width: 1px;
 		height: 1px;
@@ -36,6 +48,17 @@ canvas {
 		overflow: hidden;
 		position: relative;
 		margin-left: -1px;
+}
+#note-pad {
+	 position: absolute;
+  z-index: 9;
+  height:80vh;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+#note-pad-header{
+	height:50px;
+	background-color: brown;
 }
 
 #welcome {
